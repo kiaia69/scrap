@@ -68,4 +68,7 @@ impl Display {
     pub fn height(&self) -> usize {
         self.0.height() as usize
     }
+    pub fn name(&self) -> String {
+        String::from_utf16_lossy(self.0.name())
+    }
 }
